@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevDay.Mobile.WP8", "DevDay.Mobile.WP8\DevDay.Mobile.WP8.csproj", "{C45F57EE-8255-4966-AD64-D2808CED492E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevDay.Mobile.WP8.Data", "DevDay.Mobile.WP8.Data\DevDay.Mobile.WP8.Data.csproj", "{3387196A-AFF7-497E-8635-BC2FF4B644CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,18 @@ Global
 		{C45F57EE-8255-4966-AD64-D2808CED492E}.Release|x86.ActiveCfg = Release|x86
 		{C45F57EE-8255-4966-AD64-D2808CED492E}.Release|x86.Build.0 = Release|x86
 		{C45F57EE-8255-4966-AD64-D2808CED492E}.Release|x86.Deploy.0 = Release|x86
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Debug|ARM.Build.0 = Debug|ARM
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Debug|x86.ActiveCfg = Debug|x86
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Debug|x86.Build.0 = Debug|x86
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Release|ARM.ActiveCfg = Release|ARM
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Release|ARM.Build.0 = Release|ARM
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Release|x86.ActiveCfg = Release|x86
+		{3387196A-AFF7-497E-8635-BC2FF4B644CF}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
