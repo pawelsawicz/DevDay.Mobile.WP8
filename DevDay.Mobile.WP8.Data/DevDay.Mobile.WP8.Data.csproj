@@ -85,6 +85,18 @@
   <ItemGroup>
     <Compile Include="Agenda\Lecture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Speakers\BenHall.cs" />
+    <Compile Include="Speakers\DanNorth.cs" />
+    <Compile Include="Speakers\EnricoCampidoglio.cs" />
+    <Compile Include="Speakers\KarlHenrikNilsson.cs" />
+    <Compile Include="Speakers\KasiaMrowca.cs" />
+    <Compile Include="Speakers\NiallMerrigan.cs" />
+    <Compile Include="Speakers\PaulStack.cs" />
+    <Compile Include="Speakers\PeterSmith.cs" />
+    <Compile Include="Speakers\Qi.cs" />
+    <Compile Include="Speakers\RobAshton.cs" />
+    <Compile Include="Speakers\SebRose.cs" />
+    <Compile Include="Speakers\SimonBrown.cs" />
     <Compile Include="Speakers\Speaker.cs" />
   </ItemGroup>
   <ItemGroup />
