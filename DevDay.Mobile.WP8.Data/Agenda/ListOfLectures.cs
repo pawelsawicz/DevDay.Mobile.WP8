@@ -157,4 +157,149 @@ namespace DevDay.Mobile.WP8.Data.Agenda
             Category = "Neutral";
         }
     }
+
+    public class FourthGreen : Lecture
+    {
+        public FourthGreen()
+        {
+            IdLecture = 6;
+            Name = "React + NPM for Great Good";
+            Time = "13:50 - 14:40";
+            NameOfPresenter = "Rob Ashton";
+            Classroom = "/Assets/Images/green_path.png";
+            VoteURL = "/Assets/Images/Vote/blue_tick.png";
+            Description = "Frameworkless development with NPM is great - but patching together odd templating libraries and managing the DOM can end up causing performance issues if the team is not careful " +
+                "to batch updates across components. That's where React comes in - utilizing React as a view engine within a typical framework-less set-up can result in cheap performance gains and " +
+                "a sensible data management strategy throughout the app without any of that horrific two-way data binding found in other systems. See now as Rob covers how he uses React within a typical " +
+                "application set-up, build tools, common patterns, common modules and patterns for easy wins for the entire team.";
+            Category = "Green";
+        }
+    }
+
+    public class FourthBlue : Lecture
+    {
+        public FourthBlue()
+        {
+            IdLecture = 5;
+            Name = "Learning to Think 'The Designer Way'";
+            Time = "13:50 - 14:40";
+            NameOfPresenter = "Ben Hall";
+            Classroom = "/Assets/Images/blue_path.png";
+            VoteURL = "/Assets/Images/Vote/blue_tick.png";
+            Description = "The best way to annoy a designer is to tell them that a red block should be blue, that a piece of text should be moved over, or to make the logo bigger "+
+            "without any motivation or reasoning. The best way to give constructive feedback is to have evidence based on the site flow, design goals, visual principles and user behaviour "+
+            "to support the problems that you see with the design. To provide this you need to start thinking like a designer. In this session Ben will discuss how "+
+            "to start thinking like a designer, the core principals of design that affect our opinions of applications on a sub-concussion level based on the key design principles and how "+
+            "to start defining potential solutions the designer way. Alongside this Ben will also attempt to provide answers to the “blank canvas” problem and how you can go from nothing to something, "+
+            "an activity that designers seem to do without even thinking. As companies and communities embrace full-stack developers it’s time to start including design within that stack and not just a "+
+            "single person’s responsibility."
+            Category = "Blue";
+        }
+    }
+
+    public class FifthGreen : Lecture
+    {
+        public FifthGreen()
+        {
+            IdLecture = 8;
+            Name = "Hacking Your Doorbell";
+            Time = "15:00 - 15:50";
+            NameOfPresenter = "Karl-Henrik Nillson";
+            Classroom = "/Assets/Images/green_path.png";
+            VoteURL = "/Assets/Images/Vote/blue_tick.png";
+            Category = "Green";
+            Description = "The internet of Things is a pretty big things by now and shows no sign of stopping - in fact over the last year the 'buzz' " +
+                "about IoT have increased fivefolded and the .NET community is going to find loads of work in this Area. But the problem is that we currently don't have a good middle place " +
+            "for aspiring developers that just want to build something cool, the developers that are not in IoT projects and are looking to dive in, learn and create home IoT projects." +
+            "I have been creating network connected items for a long time and never really understood why the fact that my doorbell could be muted with a click of a button in my " +
+            "WindowsPhone was such a big deal to my developer friends, especially since it was nothing more to it than a 433 Mhz transmitter pair, an mCU and a transistor to it. " +
+            "We need to get it out there to all our super skilled developers that hacking hardware and connecting the physical world to our computers is cheap, easy and fun! " +
+            "This talk asserts the possible technology choices such as Arduino, Netduino, AVR and some other interesting choices, how basic reverse engineering of existing hardware " +
+            "is done (analysis, tools for analysis etc) and how to get started hacking hardware in a Microsoft/C# .NET (well mostly) environment TODAY!";
+        }
+    }
+
+    public class FifthBlue : Lecture
+    {
+        public FifthBlue()
+        {
+            IdLecture = 9;
+            Name = "Art of Saying NO";
+            Time = "15:00 - 15:50";
+            NameOfPresenter = "Kasia Mrowca";
+            Classroom = "/Assets/Images/blue_path.png";
+            VoteURL = "/Assets/Images/Vote/blue_tick.png";
+            Category = "Blue";
+            Description = "What to do when app requirements are „without any sense”? You might try to defend yourself from doing nonsense by estimating this accordingly " +
+                "(infinity sounds like correct estimate ;))… This strategy is tricky though! Despite high estimates client might still decide to do feature in “not the wisest manner” " +
+                "and make you miserable by the way. However, there is another way! Presentation will reveal the secret of art of saying no and expressing disagreement in a firm but user-friendly manner " +
+                "(or friendly enough to not been thrown away from window or fired).";
+        }
+    }
+
+    public class SixthGreen : Lecture
+    {
+        public SixthGreen()
+        {
+            IdLecture = 10;
+            Name = "It Doesn't Work That Way in Enterprise";
+            Time = "16:10 - 17:00";
+            NameOfPresenter = "Peter Smith";
+            Classroom = "/Assets/Images/green_path.png";
+            VoteURL = "/Assets/Images/Vote/blue_tick.png";
+            Description = "We've all heard it... or something similar. There's probably one senior guy at work who tells you this at least once a month. You've got an idea for an amazing new feature or practice that's going to save your company both time and money, " +
+                "but it's too 'cutting edge'; your management fears the unfamiliar and you are cruelly stifled. 'It doesn't work like that in Enterprise' is a passionate and motivational story " +
+                "about my journey as a developer in the face of one of the worst fallacies in our industry. The extremes of my experience will make you laugh & cry in equal measure, and maybe " +
+                "help put your own frustrations into perspective. Just remember, it does get better... and you probably got off very f***g lightly!";
+            Category = "Green";
+        }
+    }
+
+    public class SixthBlue : Lecture
+    {
+        public SixthBlue()
+        {
+            IdLecture = 11;
+            Name = "What is DevOps and How It Can Help My Business Succeed?";
+            Time = "16:10 - 17:00";
+            NameOfPresenter = "Paul Stack";
+            Classroom = "/Assets/Images/blue_path.png";
+            VoteURL = "/Assets/Images/Vote/blue_tick.png";
+            Description = "DevOps is not just a buzzword. DevOps is all about culture. By achieving the right culture, then your engineers can really start to move fast. " +
+                "Moving fast is something that we currently think we do. DevOps is not about tooling or giving developers root access to production systems.DevOps is about breaking down " +
+                "the communication barriers to allow our entire IT team to work as 1. When the team has a culture of open communication and business understanding, then they can achieve anything! " +
+                "During this talk, Paul will describe what DevOps is and how it is a great way for the entire business to achieve their goals. DevOps is not the new Agile! DevOps is about people :)";
+            Category = "Blue";
+        }
+    }
+
+    public class Seventh : Lecture
+    {
+        public Seventh()
+        {
+            IdLecture = 12;
+            Name = "Software Architecture vs Code.";
+            Time = "17:30 - 18:20";
+            NameOfPresenter = "Simon Brown";
+            Classroom = "/Assets/Images/neutral_path.png";
+            VoteURL = "/Assets/Images/Vote/blue_tick.png";
+            Description = "Software architecture and coding are often seen as mutually exclusive disciplines, despite us referring to higher level abstractions when we talk about our software. " +
+                "You've probably heard others on your team talking about components, services and layers rather than objects when they're having discussions. Take a look at the codebase though. " +
+                "Can you clearly see these abstractions or does the code reflect some other structure? If so, why is there no clear mapping between the architecture and the code? " +
+                "Why do those architecture diagrams that you have on the wall say one thing whereas your code says another? In fact, why is it so hard to automatically generate a decent architecture " +
+                "diagram from an existing codebase? Join us to explore this topic further.";
+            Category = "Neutral";
+        }
+    }
+
+    public class Party : Lecture
+    {
+        public Party()
+        {
+            Name = "Party!";
+            Time = "18:30 - ??";
+            Classroom = "/Assets/Images/neutral_path.png";
+            Category = "Neutral";
+        }
+    }
 }
