@@ -55,7 +55,7 @@
                                         <TextBlock x:Name="TimeTextBlock" Style="{StaticResource GreenTitleStyle}" Text="{Binding Time}" VerticalAlignment="Center" HorizontalAlignment="Left" Visibility="{Binding Time, Converter={StaticResource InvisibilityConverter} }"  />
                                     </Grid>
 
-                                    <Grid Grid.Row="1" Width="auto" VerticalAlignment="Top" Margin="{Binding Time, Converter={StaticResource MarginForGrid} }">
+                                    <Grid Grid.Row="1" Width="auto" VerticalAlignment="Top" Margin="{Binding Time, Converter={StaticResource MarginForGridConvert} }">
 
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="325"/>

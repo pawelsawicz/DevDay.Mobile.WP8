@@ -43,7 +43,7 @@ namespace DevDay.Mobile.WP8.Views.Speakers
         {
             var lastPage = NavigationService.BackStack.FirstOrDefault().Source.OriginalString;
 
-            if (lastPage.Contains("/Views/Lecture.xaml"))
+            if (lastPage.Contains("/Views/Lectures/Lecture.xaml"))
             {
                 NavigationService.Navigate(new Uri("/Views/MainView.xaml", UriKind.Relative));
             }

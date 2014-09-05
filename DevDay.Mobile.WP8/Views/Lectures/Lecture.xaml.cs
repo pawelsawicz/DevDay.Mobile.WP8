@@ -43,7 +43,7 @@ namespace DevDay.Mobile.WP8.Views.Lectures
 
             if (sItem != null)
             {
-                NavigationService.Navigate(new Uri("/View/Speakers/Speaker.xaml?speaker=" + sItem.Name, UriKind.Relative));
+                NavigationService.Navigate(new Uri("/Views/Speakers/Speaker.xaml?speaker=" + sItem.Name, UriKind.Relative));
             }
         }
     }

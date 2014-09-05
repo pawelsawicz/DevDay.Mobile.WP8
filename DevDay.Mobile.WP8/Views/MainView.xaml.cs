@@ -9,23 +9,26 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Collections.ObjectModel;
 using DevDay.Mobile.WP8.Data.Agenda;
+using DevDay.Mobile.WP8.Data;
+using DevDay.Mobile.WP8.Data.Speakers;
+using Microsoft.Phone.Tasks;
 
 namespace DevDay.Mobile.WP8.Views
 {
     public partial class MainView : PhoneApplicationPage
     {
-        //private ListOfSpeakers _listOfSpeakers;
+        private ListOfSpeakers _listOfSpeakers;
         //private ListOfLectures _listOfLectures;
         //private ObservableCollection<Lecture> _lectures;
 
         public MainView()
         {
-            //_listOfSpeakers = new ListOfSpeakers();
+            _listOfSpeakers = new ListOfSpeakers();
             //_listOfLectures = new ListOfLectures();
             InitializeComponent();
 
             //AgendaListBox.ItemsSource = _lectures;
-            //SpeakerListBox.ItemsSource = _listOfSpeakers.Speakers;
+            SpeakerListBox.ItemsSource = _listOfSpeakers.Speakers;
 
         }
 
@@ -41,22 +44,22 @@ namespace DevDay.Mobile.WP8.Views
 
         private void SelectionChange_SpeakerListBox(object sender, SelectionChangedEventArgs e)
         {
-            //ListBox listBox = sender as ListBox;
+            ListBox listBox = sender as ListBox;
 
-            //if (listBox != null && listBox.SelectedItem != null)
-            //{
-            //    Speaker sItem = (Speaker)listBox.SelectedItem;
+            if (listBox != null && listBox.SelectedItem != null)
+            {
+                var sItem = (Speaker)listBox.SelectedItem;
 
-            //    if (sItem.Name != null)
-            //    {
-            //        NavigationService.Navigate(new Uri("/View/Speakers/Speaker.xaml?speaker=" + sItem.Name, UriKind.Relative));
-            //    }
-            //}
+                if (sItem.Name != null)
+                {
+                    NavigationService.Navigate(new Uri("/View/Speakers/Speaker.xaml?speaker=" + sItem.Name, UriKind.Relative));
+                }
+            }
         }
 
         protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
         {
-            //Application.Current.Terminate();
+            Application.Current.Terminate();
         }
 
         private void GreenCategorySelected(object sender, System.Windows.Input.GestureEventArgs e)
@@ -117,9 +120,9 @@ namespace DevDay.Mobile.WP8.Views
 
         private void Abb_Logo_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            //var wbTask = new WebBrowserTask();
-            //wbTask.Uri = new Uri("http://new.abb.com/pl/centrum-system%C3%B3w-informatycznych-abb", UriKind.RelativeOrAbsolute);
-            //wbTask.Show();
+            var wbTask = new WebBrowserTask();
+            wbTask.Uri = new Uri("http://new.abb.com/pl/centrum-system%C3%B3w-informatycznych-abb", UriKind.RelativeOrAbsolute);
+            wbTask.Show();
         }
     }
 }
