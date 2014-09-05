@@ -9,6 +9,9 @@
     <!--Application Resources-->
     <Application.Resources>
         <local:LocalizedStrings xmlns:local="clr-namespace:DevDay.Mobile.WP8" x:Key="LocalizedStrings"/>
+        <converter:StringLengthInvisibilityConverter xmlns:converter="clr-namespace:DevDay.Mobile.WP8.Converters" x:Key="InvisibilityConverter"/>
+        <converter:IsVoteAbleItemInvisibilityConvert xmlns:converter="clr-namespace:DevDay.Mobile.WP8.Converters" x:Key="IsVoteAbleConverter"/>
+        <converter:MarginForGridConvert xmlns:converter="clr-namespace:DevDay.Mobile.WP8.Converters" x:Key="MarginForGridConvert"/>
         <Style x:Key="LayoutRootStyle" TargetType="Panel">
             <Setter Property="Background">
                 <Setter.Value>
