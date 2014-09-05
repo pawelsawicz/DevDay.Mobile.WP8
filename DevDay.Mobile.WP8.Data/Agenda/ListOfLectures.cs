@@ -186,13 +186,13 @@ namespace DevDay.Mobile.WP8.Data.Agenda
             NameOfPresenter = "Ben Hall";
             Classroom = "/Assets/Images/blue_path.png";
             VoteURL = "/Assets/Images/Vote/blue_tick.png";
-            Description = "The best way to annoy a designer is to tell them that a red block should be blue, that a piece of text should be moved over, or to make the logo bigger "+
-            "without any motivation or reasoning. The best way to give constructive feedback is to have evidence based on the site flow, design goals, visual principles and user behaviour "+
-            "to support the problems that you see with the design. To provide this you need to start thinking like a designer. In this session Ben will discuss how "+
-            "to start thinking like a designer, the core principals of design that affect our opinions of applications on a sub-concussion level based on the key design principles and how "+
-            "to start defining potential solutions the designer way. Alongside this Ben will also attempt to provide answers to the “blank canvas” problem and how you can go from nothing to something, "+
-            "an activity that designers seem to do without even thinking. As companies and communities embrace full-stack developers it’s time to start including design within that stack and not just a "+
-            "single person’s responsibility."
+            Description = "The best way to annoy a designer is to tell them that a red block should be blue, that a piece of text should be moved over, or to make the logo bigger " +
+            "without any motivation or reasoning. The best way to give constructive feedback is to have evidence based on the site flow, design goals, visual principles and user behaviour " +
+            "to support the problems that you see with the design. To provide this you need to start thinking like a designer. In this session Ben will discuss how " +
+            "to start thinking like a designer, the core principals of design that affect our opinions of applications on a sub-concussion level based on the key design principles and how " +
+            "to start defining potential solutions the designer way. Alongside this Ben will also attempt to provide answers to the “blank canvas” problem and how you can go from nothing to something, " +
+            "an activity that designers seem to do without even thinking. As companies and communities embrace full-stack developers it’s time to start including design within that stack and not just a " +
+            "single person’s responsibility.";
             Category = "Blue";
         }
     }
