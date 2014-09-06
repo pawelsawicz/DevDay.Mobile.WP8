@@ -15,8 +15,8 @@ namespace DevDay.Mobile.WP8.Views.Lectures
 {
     public partial class Lecture : PhoneApplicationPage
     {
-        public ListOfLectures _listOfLectures;
-        public ListOfSpeakers _listOfSpeakers;
+        private ListOfLectures _listOfLectures;
+        private ListOfSpeakers _listOfSpeakers;
 
         public Lecture()
         {

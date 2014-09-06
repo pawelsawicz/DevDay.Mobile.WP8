@@ -35,10 +35,10 @@ namespace DevDay.Mobile.WP8.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //foreach (var item in _listOfLectures.Lectures)
-            //{
-            //    item.CheckVoting();
-            //}
+            foreach (var item in _listOfLectures.Lectures)
+            {
+                item.CheckVoting();
+            }
 
             base.OnNavigatedTo(e);
         }
@@ -107,13 +107,13 @@ namespace DevDay.Mobile.WP8.Views
 
         private void VoteTap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            //Image textBlock = sender as Image;
-            //var sItem = (Lecture)(((Grid)((Grid)textBlock.Parent).Parent).DataContext);
+            Image textBlock = sender as Image;
+            var sItem = (Lecture)(((Grid)((Grid)textBlock.Parent).Parent).DataContext);
 
-            //if (sItem.Name != null && sItem.Description != null && sItem.Name != "TBA")
-            //{
-            //    NavigationService.Navigate(new Uri("/View/VoteView.xaml?lecture=" + sItem.Name, UriKind.Relative));
-            //}
+            if (sItem.Name != null && sItem.Description != null && sItem.Name != "TBA")
+            {
+                NavigationService.Navigate(new Uri("/Views/VoteView.xaml?lecture=" + sItem.Name, UriKind.Relative));
+            }
         }
 
         private void Abb_Logo_Tap(object sender, System.Windows.Input.GestureEventArgs e)

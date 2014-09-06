@@ -20,5 +20,27 @@ namespace DevDay.Mobile.WP8.Data.Agenda
 
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
+
+        public void CheckVoting()
+        {
+            if (Description != null)
+            {
+                if ((DateTime.Now > EndTime) && (!DataHelper.ReadVote(this)))
+                {
+                    IsVoteAble = true;
+                }
+            }
+
+            IsVoteAble = true;
+        }
+
+        public void SetTime()
+        {
+            var timeArray = Time.Split('-', ':');
+            if (Description != null)
+            {
+                EndTime = new DateTime(2014, 9, 26, int.Parse(timeArray[2]), int.Parse(timeArray[3]), 0);
+            }
+        }
     }
 }

@@ -37,8 +37,8 @@ namespace DevDay.Mobile.WP8.Data.Agenda
 
             foreach (var item in Lectures)
             {
-                //item.SetTime();
-                //item.CheckVoting();
+                item.SetTime();
+                item.CheckVoting();
             }
         }
     }
