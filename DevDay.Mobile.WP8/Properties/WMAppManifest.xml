@@ -2,7 +2,7 @@
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
   <App xmlns="" ProductID="{c45f57ee-8255-4966-ad64-d2808ced492e}" Title="DevDay 2014" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="DevDay.Mobile.WP8 author" Description="DevDay (formerly known as ABB Dev Day) is a conference that takes place in Kraków, Poland. It is mainly targeted for developers and architects, and being developers ourselves we want to provide the ultimate experience. We know that bringing like-minded and" Publisher="DevDay.Mobile.WP8" PublisherID="{9bb3c615-488a-4845-b07a-ac405d8f6cae}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">small_icon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -15,22 +15,25 @@
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="DevDay.Mobile.WP8Token" TaskName="_default">
-        <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+        <TemplateCycle>
+          <SmallImageURI IsRelative="true" IsResource="false">small_icon.png</SmallImageURI>
+          <Title>DevDay 2014</Title>
+          <Photo01ImageURI IsRelative="true" IsResource="false">darek.png</Photo01ImageURI>
+          <Photo02ImageURI IsRelative="true" IsResource="false">greg.png</Photo02ImageURI>
+          <Photo03ImageURI IsRelative="true" IsResource="false">martin.png</Photo03ImageURI>
+          <Photo04ImageURI IsRelative="true" IsResource="false">participants.png</Photo04ImageURI>
+          <Photo05ImageURI IsRelative="true" IsResource="false">rob.png</Photo05ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false">scott.png</Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false">venue.png</Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false">
+          </Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false">
+          </Photo09ImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>DevDay.Mobile.WP8</Title>
-          <BackContent>
-          </BackContent>
-          <BackBackgroundImageURI>
-          </BackBackgroundImageURI>
-          <BackTitle>
-          </BackTitle>
-          <DeviceLockImageURI>
+          <HasLarge>True</HasLarge>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
           </DeviceLockImageURI>
-          <HasLarge>
-          </HasLarge>
-        </TemplateFlip>
+        </TemplateCycle>
       </PrimaryToken>
     </Tokens>
     <ScreenResolutions>

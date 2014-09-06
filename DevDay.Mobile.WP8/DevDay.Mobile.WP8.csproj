@@ -208,7 +208,15 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="darek.png" />
+    <Content Include="greg.png" />
+    <Content Include="martin.png" />
+    <Content Include="participants.png" />
+    <Content Include="rob.png" />
+    <Content Include="scott.png" />
+    <Content Include="small_icon.png" />
     <Content Include="splashscreen.png" />
+    <Content Include="venue.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
