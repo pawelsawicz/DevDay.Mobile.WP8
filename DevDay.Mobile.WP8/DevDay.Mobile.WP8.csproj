@@ -167,6 +167,18 @@
     <Content Include="Assets\Images\medium_icon.png" />
     <Content Include="Assets\Images\neutral_path.png" />
     <Content Include="Assets\Images\small_icon.png" />
+    <Content Include="Assets\Images\Speakers\benhall.png" />
+    <Content Include="Assets\Images\Speakers\dannorth.png" />
+    <Content Include="Assets\Images\Speakers\enricocampidoglio.png" />
+    <Content Include="Assets\Images\Speakers\karlhenriknilsson.png" />
+    <Content Include="Assets\Images\Speakers\kasiamrowca.png" />
+    <Content Include="Assets\Images\Speakers\niallmerrigan.png" />
+    <Content Include="Assets\Images\Speakers\paulstack.png" />
+    <Content Include="Assets\Images\Speakers\petersmith.png" />
+    <Content Include="Assets\Images\Speakers\qi.png" />
+    <Content Include="Assets\Images\Speakers\robashton.png" />
+    <Content Include="Assets\Images\Speakers\sebrose.png" />
+    <Content Include="Assets\Images\Speakers\simonbrown.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -197,7 +209,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Images\Speakers\" />
     <Folder Include="Assets\Images\Vote\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
