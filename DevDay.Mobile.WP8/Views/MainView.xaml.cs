@@ -101,7 +101,7 @@ namespace DevDay.Mobile.WP8.Views
 
             if (sItem.Name != null && sItem.Description != null && sItem.Name != "TBA")
             {
-                NavigationService.Navigate(new Uri("/View/Lectures/Lecture.xaml?lecture=" + sItem.Name, UriKind.Relative));
+                NavigationService.Navigate(new Uri("/Views/Lectures/Lecture.xaml?lecture=" + sItem.Name, UriKind.Relative));
             }
         }
 

@@ -8,11 +8,16 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using DevDay.Mobile.WP8.Data.Speakers;
+using DevDay.Mobile.WP8.Data.Agenda;
+using DevDay.Mobile.WP8.Data;
 
 namespace DevDay.Mobile.WP8.Views.Lectures
 {
     public partial class Lecture : PhoneApplicationPage
     {
+        public ListOfLectures _listOfLectures;
+        public ListOfSpeakers _listOfSpeakers;
+
         public Lecture()
         {
             InitializeComponent();
@@ -20,20 +25,20 @@ namespace DevDay.Mobile.WP8.Views.Lectures
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //base.OnNavigatedTo(e);
+            base.OnNavigatedTo(e);
 
-            //string lecture = "";
+            string lecture = "";
 
-            //if (NavigationContext.QueryString.TryGetValue("lecture", out lecture))
-            //{
-            //    _listofLectures = new ListOfLectures();
-            //    _lecture = _listofLectures.Lectures.Where(i => i.Name == lecture).Single();
-            //    _listOfSpeakers = new ListOfSpeakers();
-            //    var speakerQuery = _listOfSpeakers.Speakers.Where(i => i.Name == _lecture.NameOfPresenter).ToList();
-            //    ContentPanel.DataContext = _lecture;
-            //    SpeakersInPresentationListBox.ItemsSource = speakerQuery;
+            if (NavigationContext.QueryString.TryGetValue("lecture", out lecture))
+            {
+                _listOfLectures = new ListOfLectures();
+                var _lecture = _listOfLectures.Lectures.Where(i => i.Name == lecture).Single();
+                _listOfSpeakers = new ListOfSpeakers();
+                var speakerQuery = _listOfSpeakers.Speakers.Where(i => i.Name == _lecture.NameOfPresenter).ToList();
+                ContentPanel.DataContext = _lecture;
+                SpeakersInPresentationListBox.ItemsSource = speakerQuery;
 
-            //}
+            }
         }
 
         private void SpeakerSelection(object sender, SelectionChangedEventArgs e)
