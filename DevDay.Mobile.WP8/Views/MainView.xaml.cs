@@ -18,16 +18,17 @@ namespace DevDay.Mobile.WP8.Views
     public partial class MainView : PhoneApplicationPage
     {
         private ListOfSpeakers _listOfSpeakers;
-        //private ListOfLectures _listOfLectures;
-        //private ObservableCollection<Lecture> _lectures;
+        private ListOfLectures _listOfLectures;
+        private ObservableCollection<Lecture> _lectures;
 
         public MainView()
         {
             _listOfSpeakers = new ListOfSpeakers();
-            //_listOfLectures = new ListOfLectures();
+            _listOfLectures = new ListOfLectures();
             InitializeComponent();
 
-            //AgendaListBox.ItemsSource = _lectures;
+            _lectures = GetGreen();
+            AgendaListBox.ItemsSource = _lectures;
             SpeakerListBox.ItemsSource = _listOfSpeakers.Speakers;
 
         }
@@ -39,7 +40,7 @@ namespace DevDay.Mobile.WP8.Views
             //    item.CheckVoting();
             //}
 
-            //base.OnNavigatedTo(e);
+            base.OnNavigatedTo(e);
         }
 
         private void SelectionChange_SpeakerListBox(object sender, SelectionChangedEventArgs e)
@@ -64,47 +65,44 @@ namespace DevDay.Mobile.WP8.Views
 
         private void GreenCategorySelected(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            //AgendaListBox.ItemsSource = GetGreen();
+            AgendaListBox.ItemsSource = GetGreen();
         }
 
         private void BlueCategorySelected(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            //AgendaListBox.ItemsSource = GetBlue();
+            AgendaListBox.ItemsSource = GetBlue();
         }
 
 
         private ObservableCollection<Lecture> GetGreen()
         {
-            //var x = _listOfLectures.Lectures.Where(i => (i.Category == "Green" || i.Category == "Neutral" || i.Category == "Blue")).ToList();
-            //foreach (var item in x)
-            //{
-            //    if (item.Category == "Blue")
-            //    {
-            //        item.Time = string.Empty;
-            //    }
-            //}
-            //_lectures = new ObservableCollection<Lecture>(x);
-            //return _lectures;
-
-            return new ObservableCollection<Lecture>();
+            var x = _listOfLectures.Lectures.Where(i => (i.Category == "Green" || i.Category == "Neutral" || i.Category == "Blue")).ToList();
+            foreach (var item in x)
+            {
+                if (item.Category == "Blue")
+                {
+                    item.Time = string.Empty;
+                }
+            }
+            _lectures = new ObservableCollection<Lecture>(x);
+            return _lectures;          
         }
 
         private ObservableCollection<Lecture> GetBlue()
         {
-            //_lectures = new ObservableCollection<Lecture>(_listOfLectures.Lectures.Where(i => (i.Category == "Blue" || i.Category == "Neutral")).ToList());
-            //return _lectures;
-            return new ObservableCollection<Lecture>();
+            _lectures = new ObservableCollection<Lecture>(_listOfLectures.Lectures.Where(i => (i.Category == "Blue" || i.Category == "Neutral")).ToList());
+            return _lectures;            
         }
 
         private void LectureTap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            //TextBlock textBlock = sender as TextBlock;
-            //var sItem = (Lecture)(((Grid)((Grid)textBlock.Parent).Parent).DataContext);
+            TextBlock textBlock = sender as TextBlock;
+            var sItem = (Lecture)(((Grid)((Grid)textBlock.Parent).Parent).DataContext);
 
-            //if (sItem.Name != null && sItem.Description != null && sItem.Name != "TBA")
-            //{
-            //    NavigationService.Navigate(new Uri("/View/Lectures/Lecture.xaml?lecture=" + sItem.Name, UriKind.Relative));
-            //}
+            if (sItem.Name != null && sItem.Description != null && sItem.Name != "TBA")
+            {
+                NavigationService.Navigate(new Uri("/View/Lectures/Lecture.xaml?lecture=" + sItem.Name, UriKind.Relative));
+            }
         }
 
         private void VoteTap(object sender, System.Windows.Input.GestureEventArgs e)

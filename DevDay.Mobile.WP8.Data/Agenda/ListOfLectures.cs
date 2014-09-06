@@ -13,6 +13,33 @@ namespace DevDay.Mobile.WP8.Data.Agenda
         public ListOfLectures()
         {
             Lectures = new List<Lecture>();
+            Lectures.Add(new Registration());
+            Lectures.Add(new Welcome());
+            Lectures.Add(new First());
+            Lectures.Add(new CoffeBreak() { Time = "10:10 - 10:40" });
+            Lectures.Add(new SecondGreen());
+            Lectures.Add(new SecondBlue());
+            Lectures.Add(new CoffeBreak() { Time = "11:30 - 11:50" });
+            Lectures.Add(new ThirdGreen());
+            Lectures.Add(new ThirdBlue());
+            Lectures.Add(new Lunch());
+            Lectures.Add(new FourthGreen());
+            Lectures.Add(new FourthBlue());
+            Lectures.Add(new CoffeBreak() { Time = "14:40 - 15:00" });
+            Lectures.Add(new FifthGreen());
+            Lectures.Add(new FifthBlue());
+            Lectures.Add(new CoffeBreak() { Time = "15:50 - 16:10" });
+            Lectures.Add(new SixthGreen());
+            Lectures.Add(new SixthBlue());
+            Lectures.Add(new CoffeBreak() { Time = "17:00 - 17:30" });
+            Lectures.Add(new Seventh());
+            Lectures.Add(new Party());
+
+            foreach (var item in Lectures)
+            {
+                //item.SetTime();
+                //item.CheckVoting();
+            }
         }
     }
 
